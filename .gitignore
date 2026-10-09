@@ -17,7 +17,10 @@ pretrained_checkpoint
 *.jpg
 *.png
 *.safetensors
-
+*.zip
+*.pkl
 *.pt
+*.npy
+
 pretrained_checkpoint/*.pt
 pretrained_checkpoint/*.pth
