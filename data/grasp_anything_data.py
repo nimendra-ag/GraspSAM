@@ -27,10 +27,10 @@ class GraspAnythingDataset(BaseGraspDataset):
         super(GraspAnythingDataset, self).__init__(**kwargs)
 
         grasp_files = glob.glob(os.path.join(root, 'grasp_label_positive', '*.pt'))
-        print(grasp_files)
+        # print(grasp_files)
 
         if self.seen:
-            print("seen")
+            # print("seen")
             with open(os.path.join('split/grasp-anything/seen.obj'), 'rb') as f:
                 idxs = pickle.load(f)
             
@@ -44,14 +44,14 @@ class GraspAnythingDataset(BaseGraspDataset):
         
         
         else:
-            print("unseen")
+            # print("unseen")
             with open(os.path.join('split/grasp-anything/unseen.obj'), 'rb') as f:
                 idxs = pickle.load(f)
 
             # print("idxs", idxs)
             self.grasp_files = list(filter(lambda x: os.path.basename(x).split('.')[0] in idxs, grasp_files))
-            print("-------------------------------------")
-            print(self.grasp_files)
+            # print("-------------------------------------")
+            # print(self.grasp_files)
 
         l = len(self.grasp_files)
 
