@@ -117,11 +117,11 @@ def build_grasp_sam(sam_encoder_type="vit_t",
 
                         'vit_t_w_ad':"pretrained_checkpoint/mobile_sam.pt",
                         
-                        "eff_vit_t":"pretrained_checkpoints/efficient_sam/efficient_sam_vitt.pt",
-                        "eff_vit_s":"pretrained_checkpoints/efficient_sam/efficient_sam_vits.pt",
+                        "eff_vit_t":"pretrained_checkpoint/efficient_sam/efficient_sam_vitt.pt",
+                        "eff_vit_s":"pretrained_checkpoint/efficient_sam/efficient_sam_vits.pt",
 
-                        "eff_vit_t_w_ad":"pretrained_checkpoints/efficient_sam/efficient_sam_vitt.pt",
-                        "eff_vit_s_w_ad":"pretrained_checkpoints/efficient_sam/efficient_sam_vits.pt",
+                        "eff_vit_t_w_ad":"pretrained_checkpoint/efficient_sam/efficient_sam_vitt.pt",
+                        "eff_vit_s_w_ad":"pretrained_checkpoint/efficient_sam/efficient_sam_vits.pt",
 
                         }
     
