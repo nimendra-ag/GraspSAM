@@ -194,6 +194,7 @@ def main(args):
 
 
     model.to(args.device)
+    print(args.device)
     model.train()
 
     parameters = [p for p in model.parameters() if p.requires_grad]
